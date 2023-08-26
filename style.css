@@ -1,0 +1,135 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(to right, #9c27b0, #8ecdff) */
+}
+#main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#main img {
+    width: 60vw;
+    margin: auto;
+    
+}
+#main h1 {
+    color: black;
+    z-index: 3;
+}
+#ramge {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    cursor: grabbing;
+    z-index: 2;
+}
+
+.mainCon{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff)
+}
+.nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+   flex-basis: 20%;
+
+}
+.logo img{
+    width: 150px;
+}
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color:black;
+}
+.container h1{
+    text-align: center;
+    color: black;
+    z-index: 3;
+    position: absolute;
+    bottom: 10%;
+}
+@media only screen and (max-width: 600px) {
+   .nav{
+    width: 80%;
+    position: sticky;
+    /* margin: 20px auto; */
+    z-index: 1;
+    display: inline-block;
+    align-items: center;
+   }
+   #main img {
+    width: 100vw;
+    margin: auto;   
+}
+#ramge {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 10%;
+    cursor: grabbing;
+    z-index: 2;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+ .logo img{
+     width: 150px;
+    
+ }
+ .nav{
+    width: 80%;
+    position: sticky;
+    margin: 0px auto;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-link{
+    flex: 1;
+    /* text-align: right; */
+}
+.nav-link ul{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+.container h1{
+    text-align: center;
+    color: black;
+    z-index: 3;
+    position: absolute;
+    bottom: 5%;
+}
+  }
